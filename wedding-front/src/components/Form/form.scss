@@ -1,0 +1,142 @@
+.form-block{
+  background-color: #FFEDB2;
+  &__inner{
+    width: 100%;
+    background: url('../../images/white-rect.png') no-repeat;
+    background-size: cover;
+    padding-bottom: 200px;
+  }
+
+  &__title{
+    width: 902px;
+    max-width: 100%;
+    padding-top: 250px;
+    font-family: 'Mak-bold';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 81px;
+    text-align: center;
+    color: #030303;
+    margin: 0 auto;
+    margin-bottom: 90px;
+  }
+
+  &__title-little{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #726DAD;
+    opacity: 0.5;
+    margin-bottom: 20px;
+  }
+
+  ol, ul{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #030303;
+    list-style-type: decimal;
+  }
+
+  ol{
+    margin-bottom: 45px;
+  }
+
+  ul{
+    margin-bottom: 90px;
+  }
+
+  form{
+    display: block;
+    width: 900px;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  textarea{
+    width: 900px;
+    height: 300px;
+    max-width: 90%;
+    background: rgba(255, 237, 179, 0.3);
+    box-shadow: 0px 4px 24px rgba(114, 109, 173, 0.3);
+    border-radius: 19px;
+    margin-bottom: 45px;
+    margin: 45px auto;
+    display: block;
+    border: none;
+    box-sizing: border-box;
+    padding: 30px;
+    max-width: 70%;
+    box-sizing: border-box;
+  }
+
+  button{
+    padding: 21px 75px;
+    border: 1px solid #030303;
+    border-radius: 51px;
+    background: none;
+    font-family: 'Mak';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #030303;
+    margin: 0 auto;
+    display: block;
+    transition: 0.5s ease;
+  }
+
+  button:hover{
+    cursor: pointer;
+    background-color: #726DAD;
+    color:#fff;
+    border: 1px solid #726DAD;
+  }
+
+  .fiolet{
+    color: #726DAD;
+    font-weight: bold;
+  }
+
+  .gray{
+    color: rgba(128, 123, 122, 0.5);
+    font-size: 20px;
+  }
+
+  .result{
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(251, 194, 8);
+  }
+
+}
+
+
+@media (max-width:1400px) {
+  .form-block{
+    &__inner{
+      width: 100%;
+      background: url('../../images/white-rect.png') no-repeat center center;
+      background-size: cover;
+      padding-bottom: 100px;
+    }
+
+    &__title{
+      padding: 120px 20px 0;
+      font-size: 48px;
+      line-height:56px;
+    }
+
+    ol,ul{
+      padding: 0 20px;
+      list-style: none;
+    }
+  }
+}
