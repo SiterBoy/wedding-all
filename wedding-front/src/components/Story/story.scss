@@ -5,7 +5,7 @@
 
   &__inner-wrapper{
     width: 100%;
-    background: url('http://localhost:3000/static/media/yellow-rect.c8f319f44cb6767f29d5.png') no-repeat;
+    background: url('../../images/yellow-rect.png') no-repeat;
     background-size: cover;
   }
 
@@ -60,7 +60,7 @@
   
     &__inner-wrapper{
       width: 100%;
-      background: url('http://localhost:3000/static/media/yellow-rect.c8f319f44cb6767f29d5.png') no-repeat center center;
+      background: url('../../images/yellow-rect.png') no-repeat center center;
       background-size: cover;
     }
   }

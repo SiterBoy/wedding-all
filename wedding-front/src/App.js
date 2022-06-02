@@ -12,10 +12,9 @@ import Footer from './components/Footer/Footer';
 function App() {
   let [guestsData, setGuestsData] = useState({});
   const url = useLocation();
-
   useEffect(() => {
     const getData = async () => {
-      const response = await axios.get(`http://localhost:5000/api/guest${url.pathname}`);
+      const response = await axios.get(`${process.env.REACT_APP_BASE_API_URI}/api/guest${url.pathname}`);
       const data = await response.data;
       setGuestsData(data);
     }
