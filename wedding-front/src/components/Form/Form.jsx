@@ -16,7 +16,7 @@ function Form({message}) {
    const messageData = Object.fromEntries(new FormData(evt.target));
    
    try {
-     const response = await fetch(`http://localhost:5000/api/guest/update-message${url.pathname}`, {
+     const response = await fetch(`http://kaliberovy.ru:5000/api/guest/update-message${url.pathname}`, {
        method: "POST",
        headers:{
          'Content-Type': 'application/json',
