@@ -13,8 +13,11 @@ function Header({guestsData}) {
   } else if (guestsData.male_name && !guestsData.female_name) {
     dear = 'Дорогой';
     you = 'тебя';
+  } else if (!guestsData.male_name && guestsData.female_name){
+    dear = 'Дорогая';
+    you = 'тебя';
   } else {
-    dear = 'Дорогая'
+    dear = 'Дорогой гость';
     you = 'тебя';
   }
 
@@ -56,11 +59,16 @@ function Header({guestsData}) {
           modules={[EffectCards]}
           className="mySwiper"
         >
-          <SwiperSlide><img className="swiperImg" src="/6.JPG" alt="1"/></SwiperSlide>
-          <SwiperSlide><img className="swiperImg" src="/5.JPG" alt="2"/></SwiperSlide>
-          <SwiperSlide><img className="swiperImg" src="/2.JPG" alt="3"/></SwiperSlide>
-          <SwiperSlide><img className="swiperImg" src="/11.JPG" alt="4"/></SwiperSlide>
-          <SwiperSlide><img className="swiperImg" src="/12.JPG" alt="5"/></SwiperSlide>
+          <SwiperSlide><img className="swiperImg" src="/1.jpg" alt="1"/></SwiperSlide>
+          <SwiperSlide><img className="swiperImg" src="/2.jpg" alt="2"/></SwiperSlide>
+          <SwiperSlide><img className="swiperImg" src="/3.jpg" alt="3"/></SwiperSlide>
+          <SwiperSlide><img className="swiperImg" src="/4.jpg" alt="4"/></SwiperSlide>
+          <SwiperSlide><img className="swiperImg" src="/5.jpg" alt="5"/></SwiperSlide>
+          <SwiperSlide><img className="swiperImg" src="/6.jpg" alt="6"/></SwiperSlide>
+          <SwiperSlide><img className="swiperImg" src="/7.jpg" alt="7"/></SwiperSlide>
+          <SwiperSlide><img className="swiperImg" src="/8.jpg" alt="8"/></SwiperSlide>
+          <SwiperSlide><img className="swiperImg" src="/9.jpg" alt="9"/></SwiperSlide>
+          <SwiperSlide><img className="swiperImg" src="/10.jpg" alt="10"/></SwiperSlide>
         </Swiper>
       </div>
     </header>

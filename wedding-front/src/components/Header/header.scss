@@ -42,6 +42,20 @@ header{
     line-height: 140.62%;
     text-align: center;
     color: #030303;
+    position:relative;
+    width:fit-content;
+    margin: 0 auto;
+
+    &:after{
+      content: '';
+      background: url("./podch.png") right no-repeat;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-size:contain;
+    }
   }
 
   &__text{

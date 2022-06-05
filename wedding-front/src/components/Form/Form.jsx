@@ -2,9 +2,15 @@ import React, { useState } from 'react';
 import './form.scss';
 import { useLocation} from 'react-router-dom';
 
-function Form(props) {
+function Form({message}) {
   const url = useLocation();
   const [result, setResult] = useState('');
+  const [currentMessage, setCurrentMessage] = useState(message);
+
+  function changeHandler (evt) {
+    evt.preventDefault();
+    setCurrentMessage(evt.target.value)
+  }
   async function submitHandler(evt) {
    evt.preventDefault();
    const messageData = Object.fromEntries(new FormData(evt.target));
@@ -48,7 +54,7 @@ function Form(props) {
         </ul>
 
         <form onSubmit={submitHandler}>
-          <textarea name="message" id="" cols="30" rows="10" placeholder="Тут надо ответить на вопросы и еще можно написать все-все-все"></textarea>
+          <textarea onChange={changeHandler} value={currentMessage} name="message" id="" cols="30" rows="10" placeholder="Тут надо ответить на вопросы и еще можно написать все-все-все"></textarea>
           <button  type="submit">Отправить</button>
           <div className="result">{result}</div>
         </form>

@@ -26,7 +26,9 @@ function App() {
       <div className="wrapper">
         <Header guestsData={guestsData}/>
         <Story />
-        <Form />
+        {Object.keys(guestsData).length > 0 && 
+          <Form message={guestsData.message}/>
+        } 
         <About />
         <AboutMore />
         <Footer />

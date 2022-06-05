@@ -6,10 +6,22 @@
     font-style: normal;
     font-weight: 300;
     font-size: 64px;
-    line-height: 81px;
+    line-height: 181px;
     text-align: center;
     color: #030303;
     margin-bottom: 100px;
+    position:relative;
+
+    &:after {
+      content: '';
+      background: url("./droplet.png") center no-repeat;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-size:contain;
+    }
   }
 
   &__title2{
